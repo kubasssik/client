@@ -1,0 +1,467 @@
+.all__p {
+    font-size: calc(14px + 2 * (100vw/1280)); 
+    text-align: center;
+    margin: 15px;
+}
+
+.star {
+    margin-right: 5px;
+    color: red;
+}
+
+.date-p {
+    font-size: calc(14px + 10 * (100vw/1280)); 
+}
+.display__none{
+    display: none;
+    
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+/*-Ховер ждя кнопок--*/
+.style__hover:hover {
+    background: radial-gradient(rgb(255, 255, 255),rgb(145, 145, 145));
+}
+
+.style__hover:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 2px 0px black;
+}
+.wrapper,
+.header,
+.footer {
+    
+    width: 100%;
+    
+
+}
+
+
+.header__block {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 10px;
+    
+}
+
+.user__ava {
+    display: grid;
+    grid-template-columns: 80px auto;
+    gap: 10px;
+    box-shadow: 0 0 5px 1px black;
+    padding: 5px;
+    
+}
+
+.ava__img {
+    height: 80px;
+    background: url(/img/no_ava.jpg) center/ cover no-repeat;
+}
+
+.name__user {
+    padding: 15px 10px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.header__nav-ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    padding: 15px 10px;
+    
+}
+.header__nav-li{
+    background: radial-gradient(rgb(255, 255, 255),rgb(194, 194, 194));
+}
+
+/*---КНОПКИ---*/
+.main__btn-style {
+    font-size: calc(17px + 5 * (100vw/1280)); 
+    padding: 10px;
+    box-shadow: 0 0 5px 1px black;
+    text-align: center;
+    cursor: pointer;
+    background: radial-gradient(rgb(255, 255, 255),rgb(194, 194, 194));
+ 
+}
+
+
+
+/*-----Главная***/
+.main {
+    
+    width: 1200px;
+    margin: 25px auto;
+    padding: 10px;
+}
+.main__block-style {
+    box-shadow: 0 0 5px 1px black;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+.tel__block{
+    grid-template-columns: 60% 30% 10%;
+}
+.label__tel{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 5px;
+}
+.label__tel p {
+    grid-column: 1/3;
+}
+.btn__dop_tel{
+    grid-row: 2/3;
+    grid-column: 2/3;
+	font-size: 24px;
+	padding: 7px;
+	width: 54px;
+	height: 54px;
+	box-shadow: 0 0 5px 1px black;
+    background: radial-gradient(rgb(255, 255, 255),rgb(194, 194, 194));
+}
+.date__block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.connection{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:5px;
+}
+.label__tel_dop{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.messenger{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 30px;
+    
+    
+}
+
+.__radio {
+    display: none;
+}
+
+.fake__ {
+	
+    position: relative;
+	left: 10px;
+    top: 20px;
+    padding: 10px 5px 5px 10px;
+    display: block;
+    width: 70px;
+    height: 39px;
+	background: radial-gradient(rgb(255, 255, 255),rgb(194, 194, 194));
+	border: 3px solid rgb(133, 133, 133);
+	border-radius: 35px;
+    z-index: 1;
+}
+
+.fake__::before {
+    content: '\2716';
+	padding: 5px 2px 0 0;
+	color: red;
+    text-shadow: 1px 1px 1px black;
+	font-size:19px;
+    position: relative;
+	top: -10px;
+	left: -10px;
+	background: radial-gradient(rgb(255, 255, 255),rgb(128, 128, 128));
+    border: 2px solid rgb(128, 128, 128);
+    display: block;
+	width: 34px;
+	height: 34px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .5s;
+    z-index: 1;
+}
+
+.__radio:checked+.fake__::before {
+    top: -10px;
+	left: 20px;
+	padding: 5px 2px 0 0;
+	font-size: 19px;
+	color: green;
+	content: '\2714';
+	transition: .5s;
+    z-index: 1;
+}
+.cash__receipt{
+    
+}
+.fake__receipt{
+left: 0;
+top: 35px;
+}
+.fake__receipt::before{
+    padding-left: 5px;
+}
+.__radio:checked+.fake__receipt::before {
+   
+	padding-left: 5px;
+    
+	
+}
+.text__receipt{
+    display: inline-block;
+    width: 100%;
+    
+    font-size: 32px;
+    position: relative;
+    top:10px;
+    left: 20px;
+}
+.input__messenger{
+	position: absolute;
+
+}
+
+.messenger__input_whatsapp{
+    background:  white url(/img/icons8-whatsapp.svg) center left no-repeat;
+}
+.messenger__input_viber{
+    background:  white url(/img/icons8-viber.svg) center left no-repeat;
+}
+
+.messenger__input_telegram{
+    background:  white url(/img/icons8-telegram-app.svg) center left/ 15% no-repeat;
+}
+
+.input__style_radio{
+    padding: 5px;
+}
+.date__btn{
+    font-size: calc(17px + 11 * (100vw/1280)); 
+    padding: 15px;
+    box-shadow: 0 0 5px 1px black;
+    text-align: center;
+    cursor: pointer;
+    background: radial-gradient(rgb(255, 255, 255),rgb(194, 194, 194));
+  
+   
+}
+
+    
+
+   
+    
+    
+
+
+
+.client__select {
+    width: 100%;
+    font-size: 24px;
+    border: 1px solid black;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+
+.label__adress-one {
+    grid-column: 1/2;
+}
+
+.label__place-one {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.label__street-one {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.label__other-one{
+    grid-column: 1/2;
+    grid-row: 2/3; 
+}
+
+.label__adress-two {
+    grid-column: 2/3;
+}
+
+.label__place-two {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.label__street-two {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.label__other-two{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.tariffs {
+    box-shadow: 0 0 5px 1px black;
+    background-color: rgba(255, 196, 0, 0.5);
+    padding: 10px;
+    gap: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.label__tariffs {
+    box-shadow: 0 0 5px 1px black;
+    padding: 10px 0 5px 0;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.label__tariffs-hover:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.label__tariffs-hover:active {
+    background-color: rgb(240, 247, 247);
+    box-shadow: 0 0 3px 0px black;
+}
+
+
+.__radio {
+    display: none;
+}
+
+.fake__radio {
+    position: relative;
+    padding: 10px 5px 5px 10px;
+    display: block;
+    width: 100%;
+    height: 70%;
+}
+
+.fake__radio::before {
+    content: '';
+    position: relative;
+    top: -5px;
+    display: block;
+    width: 100%;
+    height: 70%;
+    opacity: 0;
+    transition: .2s;
+    background-color: rgb(24, 192, 192);
+    box-shadow: 0 0 10px 2px rgb(24, 192, 192);
+}
+
+.__radio:checked+.fake__radio::before {
+    opacity: 1;
+}
+
+.text__radio {
+    cursor: pointer;
+    font-size: calc(14px + 7 * (100vw/1280)); 
+}
+
+.people {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0 0 5px 1px black;
+    background-color: rgba(30, 255, 0, 0.5);
+    padding: 10px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+.more__block {
+    box-shadow: 0 0 5px 1px black;
+    background-color: rgba(30, 255, 0, 0.5);
+    padding: 10px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.area__more {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    font-size: 35px;
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+.total__block {
+    box-shadow: 0 0 5px 1px black;
+    background-color: rgba(0, 255, 242, 0.5);
+    padding: 10px;
+    gap: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.total__list {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.total__p {
+    font-size: calc(14px + 9 * (100vw/1280)); 
+}
+
+.total__summ {
+    grid-column: 2/3;
+}
+
+.total__km-p {
+    font-size: calc(14px + 9 * (100vw/1280)); 
+}
+
+.total__summ-p {
+    font-size: calc(14px + 9 * (100vw/1280)); 
+}
+.your__summ {
+    grid-column: 3/4;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 3px 0 black;
+    padding: 10px;
+}
+.your__p {
+    font-size: calc(14px + 9 * (100vw/1280)); 
+}
+
+.your__earnings {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 19px;
+    border: 1px solid black;
+}
+.your__amount {
+}
+
+.total__btn {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.footer__block {
+    width: 1200px;
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: calc(14px + 5 * (100vw/1280)); 
+    padding: 10px;
+}
+

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+	maximum-scale=1.0, user-scalable=0">
+	<meta content="Валерий Куберский">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="burger__menu"><span>Меню</span></div>
+            <div class="header__block">
+                <div class="user__ava">
+                    <div class="ava__img"></div>
+                    <p class="name__user "></p>
+                </div>
+                <nav class="nav">
+                    <ul class="header__nav-ul">
+                        <li class="header__nav-li main__btn-style style__hover">Помощь</li>
+                        <li class="header__nav-li main__btn-style style__hover">Мои заказы</li>
+                        <li class="header__nav-li main__btn-style style__hover">Настройки</li>
+                        <li class="header__nav-li main__btn-style style__hover">Позвонить</li>
+                        <li class="header__nav-li main__btn-style style__hover">Выход</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+
+
+            <form action="" class="form">
+                <div class="tel__block main__block-style">
+                 <div class="connection">
+                    <label class="label__tel ">     
+                        <p class="all__p"><span class="star">*</span>Телефон:</p>
+                        <input type="tel" class="tel__input client__select" name="" id="">
+                        <button class="btn__dop_tel style__hover" type="button">&#10133;</button>
+                    </label>
+                    <label class="label__tel_dop display__none ">     
+                        <p class="all__p"><span class="star">*</span>Доп. тел:</p>
+                        <input type="tel" class="tel__input client__select" name="" id="">
+                        
+                    </label>
+                   
+                    <label class="label__messenger ">
+                        <p class="all__p">Мессенджер:</p>
+                        <input type="tel" class="messenger__input client__select messenger__input_whatsapp" name="" id="">
+                    </label>
+                 </div>
+                    
+                    <div class="messenger">
+                        <label class="label__whatsapp ">
+                            <span class="text__"><img src="/img/icons8-whatsapp.svg" alt=""></span>
+                            <input class="whatsapp__radio input__style_radio __radio  " type="radio" name="messenger__radio" value = "whatsapp" id="" checked>
+                            <span class="fake__"></span>
+                        </label>
+                        <label class="label__viber ">
+                            <span class="text__"><img src="/img/icons8-viber.svg" alt=""></span>
+                            <input class="viber__radio input__style_radio __radio" type="radio" name="messenger__radio"  value = "viber" id="">
+                            <span class="fake__"></span>
+                        </label>
+                        <label class="label__telegram ">
+                            <span class="text__"><img src="/img/icons8-telegram-app.svg" alt=""></span>
+                            <input class="telegram__radio input__style_radio __radio" type="radio" name="messenger__radio" value = "telegram" id="">
+                            <span class="fake__"></span>
+                        </label>
+                        
+                    </div>
+                    <div class="cash__receipt">
+                        <label class="label__receipt">
+                            <span class="text__receipt text__">&#129534;</span>
+                            <input class="receipt__radio input__style_radio __radio" type="checkbox" name="receipt"  id="">
+                            <span class="fake__receipt fake__"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="date__block main__block-style">
+                    
+                    
+                    <label class="label__date-one ">
+                        <p class="date-p all__p"><span class="star">*</span>Дата</p>
+                        <input type="datetime-local" class="date__input client__select" name="" id="">
+                    </label>
+                    
+                    <button type="button" class="date__btn  style__hover">Сейчас</button>
+                </div>
+                <div class="adress__block main__block-style">
+                    <label class="label__address-one label__address">
+                        <p class="adress__one-p all__p"><span class="star">*</span>От куда:</p>
+                        <select type="text" class="address__one client__select address"></select>
+                    </label>
+
+                    <label class="label__place-one display__none">
+                        <p class="place__one-p all__p "><span class="star">*</span>Населенный пункт:</p>
+                        <select type="text" class="place__one client__select "> </select>
+                    </label>
+
+                    <label class="label__other-one display__none other">
+                        <p class="other__one-p all__p "><span class="star">*</span>Населенный пункт:</p>
+                        <input type="text" class="other__one input__onher client__select" placeholder="город,село или место">
+                    </label>
+
+                    <label class="label__street-one display__none">
+                        <p class="street__one-p all__p "><span class="star">*</span>Улица:</p>
+                        <select type="text" class="street__one client__select">
+                        </select>
+                    </label>
+
+                    <label class="label__address-two label__address ">
+                        <p class="adress__two-p all__p"><span class="star">*</span>Куда:</p>
+                        <select type="text" class="address__two client__select address"></select>
+                    </label>
+
+                    <label class="label__place-two display__none">
+                        <p class="place__two-p all__p"><span class="star">*</span>Населенный пункт:</p>
+                        <select type="text" class="place__two client__select">
+                           
+                        </select>
+                    </label>
+                    <label class="label__other-two display__none other">
+                        <p class="other__two-p all__p "><span class="star">*</span>Населенный пункт:</p>
+                        <input type="text" class="other__two input__onher client__select" placeholder="город,село или место">
+                    </label>
+
+                    <label class="label__street-two display__none">
+                        <p class="street__two-p all__p "><span class="star">*</span>Улица:</p>
+                        <select type="text" class="street__two client__select">
+                        </select>
+                    </label>
+                </div>
+
+                <div class="tariffs__block  tariffs">
+                    <label class="label__tariffs  label__tariffs-hover ">
+                        <p class="help"></p>
+                        <span class="text__radio"><span class="star">*</span>Эконом</span>
+                        <input class="tariffs__radio __radio" type="radio" name="tariffs__radio" id="" value="Эконом">
+                        <span class="fake__radio"></span>
+                    </label>
+                    <label class="label__tariffs label__tariffs-hover">
+                        <p class="help"></p>
+                        <span class="text__radio"><span class="star">*</span>Комфорт</span>
+                        <input class="tariffs__radio __radio" type="radio" name="tariffs__radio" id=""  value="Комфорт" checked>
+                        <span class="fake__radio"></span>
+
+                    </label>
+                    <label class="label__tariffs label__tariffs-hover">
+                        <p class="help"></p>
+                        <span class="text__radio"><span class="star">*</span>Комфорт +</span>
+                        <input class="tariffs__radio __radio" type="radio" name="tariffs__radio" id="" value="Комфорт +">
+                        <span class="fake__radio"></span>
+
+                    </label>
+                    <label class="label__tariffs label__tariffs-hover">
+                        <p class="help"></p>
+                        <span class="text__radio"><span class="star">*</span>Бизнес</span>
+                        <input class="tariffs__radio __radio" type="radio" name="tariffs__radio" id="" value="Бизнес">
+                        <span class="fake__radio"></span>
+
+                    </label>
+                    <label class="label__tariffs label__tariffs-hover">
+                        <p class="help"></p>
+                        <span class="text__radio"><span class="star">*</span>Минивэн</span>
+                        <input class="tariffs__radio __radio" type="radio" name="tariffs__radio" id="" value="Минивэн">
+                        <span class="fake__radio"></span>
+
+                    </label>
+                    <label class="label__tariffs label__tariffs-hover">
+                        <p class="help"></p>
+                        <span class="text__radio"><span class="star">*</span>Миниавтобус</span>
+                        <input class="tariffs__radio __radio" type="radio" name="tariffs__radio" id="" value="Миниавтобус">
+                        <span class="fake__radio"></span>
+
+                    </label>
+                </div>
+                <div class="people">
+                    <label class="label__people-one label__people">
+                        <p class="people__one-p all__p"><span class="star">*</span>Пассажиров с детьми:</p>
+                        <select type="text" class="people__one client__select select__people">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </label>
+                    <label class="label__people-two label__people">
+                        <p class="people__two-p all__p"><span class="star">*</span>Детское кресло:</p>
+                        <select type="text" class="people__two client__select select__people">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                           
+                        </select>
+
+                    </label>
+                    <label class="label__people-three label__people">
+                        <p class="people__three-p all__p"><span class="star">*</span>Бустер:</p>
+                        <select type="text" class="people__three client__select select__people">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                        </select>
+
+                    </label>
+                </div>
+                <div class="more__block">
+                    <p class="more__p all__p">Комментарий</p>
+                    <textarea class="area__more " name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="total__block">
+                    <div class="total__list">
+                        <p class="total__p">От куда:</p>
+                        <p class="total__p">Куда:</p>
+                        <p class="total__p">Номер тел:</p>
+                        <p class="total__p">Доп тел:</p>
+                        <p class="total__p">Мессенджер:</p>
+                        <p class="total__p">Чек:</p>
+                        <p class="total__p">Тариф:</p>
+                        <p class="total__p">Кол-во пассажиров:</p>
+                        <p class="total__p">Детское кресло:</p>
+                        <p class="total__p">Бустер:</p>
+                       
+                    </div>
+                    <div class="total__summ">
+                        <p class="total__km-p">80km</p>
+                        <p class="total__summ-p">2000 rub</p>
+                    </div>
+                    <div class="your__summ">
+                        <p class="your__p all__p">Ваша сумма</p>
+                        <input type="number" class="your__earnings" placeholder="Введите сумму">
+                        <p class="your__p all__p">Ваше вознаграждение</p>
+                        <div class="your__amount all__p">10</div>
+
+                    </div>
+                    <div class="total__btn">
+                        <button class="main__btn-style style__hover" type="reset" >Очистить</button>
+                        <button class="main__btn-style style__hover" type="submit " >Отправить</button>
+                    </div>
+
+                </div>
+            </form>
+
+
+        </main>
+        <footer class="footer">
+            <div class="footer__block">
+                <p>
+                    Данный сервис является авторской работой, автор и правообладатель Куберский Валерий Викторивич,
+                    все изменения, передача третьим лицам запрещено! По всем вопросам обращаться к автору.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script src="/js/index.js" type="module"></script>
+
+</html>
